@@ -6,10 +6,11 @@ function create(window) {
   location = window.location || require('location');
   navigator = window.navigator || require('navigator');
 
-  if (!window.XMLHttpRequest && 'function' !== typeof window.ActiveXObject) {
+  if (('function' !== typeof window.XMLHttpRequest && 'object' !== typeof window.XMLHttpRequest) && 'function' !== typeof window.ActiveXObject) {
     window.XMLHttpRequest = require('xmlhttprequest'); // require('XMLHttpRequest');
     // TODO repackage XMLHttpRequest
   }
+  
 
   // end npm / ender header
 
