@@ -8,6 +8,6 @@
   "dependencies"  : {
                     },
   "lib"           : ".",
-  "main"          : "./node-jquery.js",
+  "main"          : "./dist/node-jquery.js",
   "version"       : "1.6.3"
 }
